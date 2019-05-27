@@ -1,1 +1,21 @@
 def greet():return 'hello world!'
+
+
+//Prime number
+function isPrime(num)
+{
+    for (var i=2;i<num;i++)
+    if (num%i==0) return false;
+    return num>=2;
+}
+console.log(isPrime(11));
+
+//Composition
+function compose(f,g)
+{
+return function() { return f(g.apply(this,arguments)); };
+
+}
+
+
+
