@@ -1,0 +1,14 @@
+ //To sum digit of number
+ function sumDigits(n) {
+   return (n - 1) % 9 + 1; }
+ console.log(sumDigits(124));
+ 
+ 
+ //replace with alphabetPosition
+ function alphabetPosition(text) {
+  return text.toLowerCase()
+    .split('')
+    .filter(c => c.charCodeAt(0) < 123 && c.charCodeAt(0) > 96)
+    .map(c => c.charCodeAt(0) - 96)
+    .join(' ');
+}
